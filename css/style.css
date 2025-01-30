@@ -1,4 +1,3 @@
-/* Ini File CSS */
 header {
     text-align: center;
     background-color: #4DA1A9;
@@ -148,12 +147,6 @@ button:hover {
 }
 
 ol {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.no-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
