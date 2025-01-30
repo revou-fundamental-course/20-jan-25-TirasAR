@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BMI Calculator - Tiras AR</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Kalkulator BMI</h1>
+			<p>
+				Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?<br />Yuk, hitung sekarang di kalkulator BMI.
+			</p>
+		</header>
+		<main>
+			<div class="container">
+				<div class="hitung">
+					<div class="form">
+						<form>
+							<b>Jenis Kelamin</b>
+							<br />
+							<input type="radio" id="pria" name="jenis_kelamin" value="pria" />
+							<label for="pria">Pria</label>
+							<input type="radio" id="wanita" name="jenis_kelamin" value="wanita" />
+							<label for="wanita">Wanita</label>
+							<br />
+							<label for="berat_badan">Berat Badan (kg):</label><br />
+							<label for="berat_badan"></label>
+							<input type="number" name="berat_badan" id="berat_badan" />
+							<br />
+							<label for="usia">Usia (tahun):</label><br />
+							<input type="number" name="usia" id="usia" />
+							<br />
+							<label for="tinggi_badan">Tinggi Badan (cm):</label><br />
+							<input type="number" name="tinggi_badan" id="tinggi_badan" />
+							<br />
+							<button type="submit" onclick="calculateBMI()">Calculate</button>
+							<button type="reset">Reset</button>
+						</form>
+					</div>
+
+					<div class="description">
+						<p>Keunggulan Fitur</p>
+						<ol>
+							<li>Menghitung berat badan</li>
+							<li>Menentukan kategori berat badan ideal atau tidak</li>
+							<li>Mempersiapkan program penurunan berat badan</li>
+						</ol>
+
+						<p>
+							Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang
+							yang memenuhi syarat seperti dokter.
+						</p>
+						<br />
+						<p>
+							Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam Kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam
+							meter) atau BMI = Kg/M2.
+						</p>
+					</div>
+				</div>
+
+				<div class="result">
+					<h2>Hasil Perhitungan</h2>
+					<div class="hasil">
+						<p>
+							<b>Berat Badan Lebih</b><br />
+							<span id="berat_badan_result"></span> kg
+						</p>
+						<p>Anda memiliki berat badan berlebih</p>
+						<br />
+						<button>Dowdnload Hasil BMI</button>
+					</div>
+					<br />
+					<p>Hasil BMI diantara 23 dan 25</p>
+					<p>Anda berada dalam kategori overweight atau berat badan berlebih.</p>
+					<p>Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga.</p>
+					<p>Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.</p>
+					<br />
+					<button>Konsultasi Ahli Gizi Via Aplikasi</button>
+					<button>Registrasi Online Ahli Gizi</button>
+					<br />
+					<p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai risiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
+					<br />
+
+					<p><b>Usia:</b> <span id="usia_result"></span> tahun</p>
+					<p><b>Tinggi Badan:</b> <span id="tinggi_badan_result"></span> cm</p>
+					<p><b>BMI:</b> <span id="bmi_result"></span></p>
+					<p><b>Kategori BMI:</b> <span id="kategori_bmi_result"></span></p>
+					<p><b>Berat Badan Ideal:</b> <span id="berat_badan_ideal_result"></span> kg</p>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>&copy; 2025 Tiras AR</p>
+		</footer>
+	</body>
+</html>
